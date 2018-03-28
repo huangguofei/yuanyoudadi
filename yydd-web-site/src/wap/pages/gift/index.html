@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>茶礼-源优大地</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="源优大地,走遍大地,优选好茶" />
+    <meta name="keywords" content="源优大地" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="../../js/plugin/idangerous.swiper.css">
+     @@include('../include/header.tpl')
+</head>
+<body>
+  <div class="gift-page comm-page" id="giftPage">
+     @@include('../include/nar.tpl')
+     @@include('../include/goods.tpl')
+     <div class="swiper-container">
+        <div class="swiper-wrapper" style="display:none;">
+         
+          <div class="swiper-slide slide-1">
+            <div class="desc slide-left ">
+              <p class="gift-text-icon con-text"><a href="javascript:viod(0)"  class="btn-event">开始定制</a></p>
+            </div>
+            <div class="opacity"></div>
+          </div>
+           <div class="swiper-slide slide-4">
+                <form class="gift-form">
+                    <h2>定制信息填写</h2>
+                    <div class="ctrl-item">
+                        <label>您的姓名：</label>
+                        <input type="text" class="form-ctrl name" placeholder="联系人姓名" />
+                    </div>
+                    <div class="ctrl-item">
+                        <label>联系电话：</label>
+                        <input type="number" class="form-ctrl phone" placeholder="输入手机号或座机" />
+                    </div>
+                    <div class="ctrl-item text-item">
+                        <label>备注信息：</label>
+                        <textarea class="remark"></textarea>
+                    </div>
+                    <div class="submit">
+                        <a href="javascript:void(0)" class="confirm">提交</a>
+                    </div>
+                </form>
+          </div>
+          
+        </div>
+        <div class="pagination"></div>
+      </div>
+      <div class="error-message">
+          <span class="con"></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="../../js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/plugin/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.min.js"></script>
+    
+    <script>
+      $(function() {
+           common.narActive("gift");
+          giftModule.init();
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>选茶-源优大地</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="源优大地,走遍大地,优选好茶" />
+    <meta name="keywords" content="源优大地" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="../../js/plugin/idangerous.swiper.css">
+     <script type="text/javascript" src="../../js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/plugin/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/plugin/clipboard.min.js"></script> 
+    <script type="text/javascript" src="../../js/main.min.js"></script>
+    <script>
+		var _hmt = _hmt || [];
+		(function() {
+			var host = window.location.host;
+			if(host.indexOf("yuanyoudadi.com") >= 0 || host.indexOf("naturalgiving.cn") >= 0) {
+				  var hm = document.createElement("script");
+
+				  hm.src = "https://hm.baidu.com/hm.js?a80131c47c9510dc37c21b92f3404763";
+
+				  var s = document.getElementsByTagName("script")[0]; 
+
+				  s.parentNode.insertBefore(hm, s);
+		  	}
+		})();
+	
+</script>
+</head>
+<body>
+  <div class="result-page comm-page">
+    <div class="pad-head">
+        <a href="/web/view/pad/" class="returnPage"></a>
+        <span>体质结果</span>
+    </div> 
+    <div class="share-content" id="shareCon">
+        <span href="javascript:void(0)" class="close"></span>
+        <div class="container">
+          <p class="title">转转更健康，转给你的好友，让他们知道你的关心吧。</p>
+          <div class="share-wrap">
+            <input value="" class="share-path" readonly id="copyUrl" />
+            <span class="copy message" data-clipboard-target="#copyUrl">复制<span class="info">复制成功</span></span>
+          </div>
+        </div>
+    </div>
+    <div class="result-wrap" id="resultWrap">
+        <div class="container">
+                <div class="report">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon">
+                          <span class="name"></span>
+                          <!-- <span class="share" style="display:none;">分享给好友</span> -->
+                        </p>
+                        <p class="line"></p>
+                    </div>
+                   <div class="slide-right">
+                      <div class="reamk">
+
+                      </div>
+                  </div>
+                </div>
+                <div class="prod-wrap">
+                  <h2>根据您的体质，为您推荐以下几款茶叶：</h2>
+                  <ul class="prod-list">
+                        
+                  </ul> 
+                </div>
+              </div>
+     </div>
+   
+  </div>
+    <script>
+      $(function() {
+           common.narActive("choose");
+           resultModelu.init();
+      });
+    </script>
+</body>
+</html>

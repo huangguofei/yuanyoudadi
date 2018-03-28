@@ -1,0 +1,36 @@
+ @import "../../../lib/less/config.less";
+body{
+	background: #FFF;
+}
+.comment-success-page{
+	width:100%;
+	height:100%;
+	overflow-y: hidden;
+	.success-con{
+		text-align: center;
+		.s-icon{
+			margin-top:3*@f;
+			i{
+				display: inline-block;
+				width:2.4*@f;
+				height:2*@f;
+				background: url(../images/success.png) no-repeat;
+				background-size: cover;
+			}
+		}
+		.state{
+			color:@acolor;
+			font-weight: bold;
+			font-size:24px;
+			padding:0.1*@f 0 0.5*@f 0;
+		}
+		.jump{
+			color:@acolor;
+			font-size:16px;
+			border:1px solid @acolor;
+			padding:0.12*@f 0.05*@f;
+			border-radius: 0.1*@f;
+		}
+	}
+	
+}

@@ -1,0 +1,46 @@
+@import "../../../lib/less/config.less";
+.product-page{
+	background: #000;
+	height:auto;
+	.prod-wrap{
+		padding:@f 0.2*@f;
+		border-bottom:1px solid #333;
+		.p-item{
+			float:left;
+			width:50%;
+			height:5*@f;
+			color:#eee;
+			text-align: center;
+			.pro-img{
+				height:2.4*@f;
+				text-align: center;
+				margin-top:0.5*@f;
+				padding:0.2*@f;
+				line-height: 2.4*@f;
+				img{
+					max-height:90%;
+					max-width: 90%;
+					vertical-align: middle;
+				}
+			}
+			a{
+				color:#FFF;
+			}
+			a:active{
+				.pro-img{
+					img{
+						max-height:100%;
+						max-width: 100%;
+						vertical-align: middle;
+					}
+				}
+			}
+
+			.zh{
+				margin-top:0.2*@f;
+				font-size:0.32*@f;
+			}
+		}
+		
+	}
+}

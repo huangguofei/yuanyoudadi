@@ -1,0 +1,140 @@
+/*
+ * author pizhenhua
+ * day 2017-9-8
+  */
+  @import "../../../lib/less/config.less";
+.good-tea-page{
+	.p-1{
+		position:fixed;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		z-index:-1;
+		background:url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/1c25a9fa11c04bad86e153b1c9863ca1.png) no-repeat center center;
+		background-size:cover;
+		.head{
+			position:absolute;
+			width:100%;
+			top:50%;
+			margin-top:-@f;
+			color:#FFF;
+			font-size:0.56*@f;
+			text-align:center;
+			font-weight: normal;
+			animation: topDownShow 0.5s ease 0.5s 1;
+		}
+		
+	}
+	.title{
+		font-size:0.48*@f;
+		color:#F9F9F9;
+		font-weight: normal;
+		text-align: center;
+	}
+	.reamk{
+		font-size:0.28*@f;
+		color:#BACADB;
+		line-height:26px;
+		text-align: center;
+		padding-top:0.3*@f;
+	}
+	.reamk-con{
+		padding:0.5*@f;
+		
+	}
+	.panel-content{
+		position: relative;
+		top:100%;
+	}
+	.t-img{
+		padding-top:0.5*@f;
+		img{
+			max-width: 100%;
+		}
+	}
+	.p-2{
+		background:#292928;
+		padding:0.6*@f 0.2*@f;
+	}
+	.p-3{
+		background:url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/87f17c331d7c4155b6afd93d2f4105bd.png) no-repeat center center;
+		background-size:cover;
+		height:10*@f;
+		position: relative;
+		.pan-con{
+			position: absolute;
+			top:50%;
+			margin-top:-@f;
+			width:100%;
+		}
+	}
+	.p-5{
+		background:rgb(33,48,71);
+		text-align:center;
+		padding:0.5*@f;
+		.overflow-wrap{
+			width:100%;
+			margin-top:0.5*@f;
+		}
+		.t-list{
+			margin:auto;
+			text-align:center;
+
+			.t-item{
+				height:6*@f;
+				border:1px solid rgba(148,162,176,0.2);
+				border-radius:7px;
+				margin-bottom: 0.5*@f;
+				padding:0.5*@f 0;
+				box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+				.t-icon{
+					display:inline-block;
+					width:160px;
+					height:160px;
+				}
+				.title{
+					font-size:0.48*@f;
+					margin-top:0.3*@f;
+				}
+				.reamk{
+					font-size:0.28*@f;
+					padding:0 20px;
+					color:#BACADB;
+				}
+			}
+			.t-1{
+				.t-icon{
+					background:url(../images/exploit.png) no-repeat center center;
+					background-size:auto 100%;
+				}
+			}
+			.t-2{
+				.t-icon{
+					background:url(../images/experts.png) no-repeat center center;
+					background-size:auto 100%;
+				}
+			}
+			.t-3{
+				.t-icon{
+					width:180px;
+					background:url(../images/sgs.png) no-repeat center center;
+					background-size:100% auto;
+				}
+			}
+		}
+	}
+	.p-6{
+		height:10*@f;
+		background:url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/624f2ba6599c49babad554844fc268dc.png) no-repeat center center;
+		background-size:cover;
+		position: relative;
+		.pan-con{
+			position: absolute;
+			top:50%;
+			margin-top:-@f;
+			width:100%;
+		}
+		
+	}
+}

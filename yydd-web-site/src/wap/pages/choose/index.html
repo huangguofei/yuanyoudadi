@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>选茶-源优大地</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="源优大地,走遍大地,优选好茶" />
+    <meta name="keywords" content="源优大地" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="../../js/plugin/idangerous.swiper.css">
+     @@include('../include/header.tpl')
+</head>
+<body>
+  <div class="choose-page comm-page">
+    @@include('../include/nar.tpl')
+    @@include('../include/goods.tpl')
+     <div class="swiper-container" id="chooseSwiper">
+      <div class="swiper-wrapper" style="display:none;">
+         <!--  <div class="swiper-slide slide-1">
+              <div class="slide-left ">
+                <p class="choose-text-icon con-text">
+                    <a href="javascript:viod(0)" class="more btn-event">了解更多</a>
+                </p>
+              </div>
+          </div> -->
+          <div class="swiper-slide slide-2">
+               <div class="slide-left ">
+                <p class="choose-conr-icon con-text"></p>
+              </div>
+              <div class="line"></div>
+              <div class="pro-img slide-right">
+                    <div class="corporeity-wrap">
+                          <!-- 选择体质 -->
+                          <div class="select-cor">
+                            <div class="title">请选择您的体质：</div>
+                            <div class="cor-list">
+                                <span class="c-item" key="1">平和体质</span>
+                                <span class="c-item" key="2">气虚体质</span>
+                                <span class="c-item" key="3">阳虚体质</span>
+                                <span class="c-item" key="4">阴虚体质</span>
+                                <span class="c-item" key="5">痰湿体质</span>
+                                <span class="c-item" key="6">湿热体质</span>
+                                <span class="c-item" key="7">血瘀体质</span>
+                                <span class="c-item" key="8">气郁体质</span>
+                                <span class="c-item" key="9">特禀体质</span>
+                            </div>
+                            <div class="bottom">
+                              <a class="testing" href="/wap/view/choose/quiz.html">我不知道什么体质，立即测试</a><br/><br/>
+                              <a href="javascript:void(0)" class="next message">下一步<span class="info">请勾选体质！</span></a>
+                            </div>
+                          </div>
+
+                      </div>
+              </div>
+          </div>
+
+      <div class="pagination"></div>
+    </div>
+    <div class="isSubmit">
+        正在提交您的体质报告...
+    </div>
+  </div>
+	
+    <script type="text/javascript" src="../../js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/plugin/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.min.js"></script>
+	  
+    <script>
+       $(function() {
+         common.narActive("choose");
+         chooseModule.init();
+      })
+    </script>
+</body>
+</html>

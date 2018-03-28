@@ -1,0 +1,104 @@
+ @import "../../../lib/less/config.less";
+.comment-page{
+	width:100%;
+	height:100%;
+	background: url(../images/comment-bg.jpg) no-repeat center center;
+	background-size: cover;
+	overflow:hidden;
+	.page-wrap{
+		padding:1.5*@f 0.3*@f;
+		overflow-y: auto;
+		height:82%;
+	}
+	.comment-con{
+		background: #FFF;
+		border-radius:5px;
+		.head{
+			background: @acolor;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			color:#FFF;
+			text-align: center;
+			padding-bottom:0.2*@f;
+			.head-icon{
+				height:1*@f;
+				i{
+					position: relative;
+					top:-0.8*@f;
+					display: inline-block;
+					width:2.4*@f;
+					height:2*@f;
+					background: url(../images/comment-group.png) no-repeat;
+					background-size: cover;
+				}
+			}
+			h1{
+				font-size:22px;
+				padding-top:0.05*@f;
+			}
+			h2{
+				font-size:16px;
+				padding:0.05*@f 0;
+			}
+		}
+		.center{
+			padding:0.36*@f;
+			.c-item{
+				padding:0.16*@f 0 0.24*@f 0;
+				position: relative;
+				.t1{
+					font-size:18px;
+					font-weight: bold;
+				}
+				.star-wrap{
+					position: absolute;
+					top:0.12*@f;
+					left:1.8*@f;
+					white-space:nowrap; 
+					.star{
+						display: inline-block;
+						width:0.53*@f;
+						height:0.5*@f;
+						background: url(../images/Star-check-icon.png) no-repeat;
+						background-size: cover;
+						margin-right:0.18*@f;
+					}
+					.active{
+						background: url(../images/Star-icon.png) no-repeat;
+						background-size: cover;
+					}
+				}
+				
+			}
+			.reamk{
+				margin-top:0.2*@f;
+				.watermark_container{
+					width:100%;
+				}
+				textarea{
+					width:100%;
+					border:1px solid #eee;
+					border-radius: 5px;
+					line-height: 24px;
+					color:#666;
+					background:rgb(247, 247, 247);
+					font-size:14px;
+					padding:0.1*@f 0 0.1*@f 0;
+				}
+			}
+			.event{
+				padding-top:0.35*@f;
+				.btn-confirm{
+					background: @acolor;
+					border:0;
+					color:#fff;
+					width:100%;
+					height:0.85*@f;
+					font-size:18px;
+					font-weight: bold;
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+}

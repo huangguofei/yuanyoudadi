@@ -1,0 +1,198 @@
+/*
+ * author pizhenhua
+ * day 2017-7-13
+ * 选茶页面样式
+ */
+  @acolor : #9d6d4a;
+ .result-page{
+ 	width:100%;
+ 	height:100%;
+ 	overflow-y: hidden;
+ 	background: url(../images/m-back1.jpg) no-repeat center center;
+	background-size: cover;  
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/web/images/m-back1.jpg',  sizingMethod='scale');
+	.choose-conr-icon{
+ 		background:url(../images/choose-conr-icon.png)  no-repeat;
+ 	}
+	.result-wrap{
+		width:100%;
+		height:100%;
+		.container{
+		 	padding:0 20px;
+		 	height: 100%;
+		 	margin:auto;
+		 }
+		 .slide-new{
+	 		width:100%;
+	 		height:100%;
+	 	}
+		.con-text{
+			position: absolute;
+			top:50%;
+			height:67px;width:182px;background-position:0 0;
+			margin-top:-20px;
+			text-align: center;
+			.name{
+				position: absolute;
+				display: inline-block;
+				bottom:-60px;
+				width:100%;
+				left:50%;
+				margin-left:-91px;
+				color:#FFF;
+				font-size:42px;
+				border-bottom:1px solid #CCC;
+			}
+			.share{
+				position: absolute;
+				right:0;
+				cursor: pointer;
+				bottom:-95px;
+				border-bottom:1px solid @acolor;
+				color:@acolor;
+				font-size:18px;
+			}
+		}
+		.line{
+			position: absolute;
+			right:160px;
+			height:150px;
+			border-right:1px solid #666;
+			top:50%;
+			margin-top:-20px;
+		}
+		.reamk{
+			position: absolute;
+			top:50%;
+			margin-top:-20px;
+			line-height: 22px;
+			color:#FFF;
+		}
+		.report{
+			height:47%;
+			.slide-left,.slide-right{
+				position: relative;
+				float: left;
+				height:100%;
+				width:50%;
+			}
+		}
+		.prod-wrap{
+			height:50%;
+			overflow-y: auto;
+			h2{
+				text-align: center;
+				color:@acolor;
+				padding-bottom:30px;
+			}
+			.prod-list{
+				margin:auto;
+				width:100%;
+				text-align: center;
+				.no-data{
+					font-size:16px;
+					color:#FFF;
+				}
+			}
+			.p-item{
+				width:20%;
+				float: left;
+				text-align: center;
+				color:#FFF;
+				.pro-img{
+					height:180px;
+					margin:auto;
+					text-align: center;
+					vertical-align: middle;
+					vertical-align: middle;
+					display:-webkit-box; 
+					-webkit-box-pack: center; 
+					-webkit-box-align: center; 
+					img{
+						max-width:80%;
+						max-height:80%;
+						vertical-align: middle;
+					}
+				}
+				.pro-img:hover{
+					img{
+						max-width:90%;
+						max-height:90%;
+						vertical-align: middle;
+					}
+				}
+				.zh{
+					color:#FFF;
+				}
+			}
+		}
+	}
+	.share-content{
+	 	display: none;
+	 	position: fixed;
+	 	bottom:-200px;
+	 	left:0;
+	 	z-index:999999;
+	 	width:100%;
+	 	background: #000;
+	 	.close{
+	 		display: inline-block;
+	 		position: absolute;
+	 		right:10px;
+	 		top:5px;
+	 		width:20px;
+	 		height:20px;
+	 		text-align: center;
+	 		color:#FFF;
+	 		cursor: pointer;
+	 	}
+	 	.close:before{
+	 		content : "\2715";
+	 		
+	 	}
+	 	.close:hover{
+	 		color:#333;
+	 	}
+	 	.container{
+	 		padding:50px 20px;
+	 		color:#FFF;
+	 		.share-wrap{
+	 			padding:20px 0;
+	 			.share-path{
+	 				display: inline-block;
+	 				border:1px solid #666;
+	 				padding:10px;
+	 				width:700px;
+	 				border-radius: 5px;
+	 				background: #000;
+	 				font-size:14px;
+	 				color:#FFF;
+	 			}
+	 			.copy{
+	 				cursor: pointer;
+	 			}
+	 			.copy:hover{
+	 				color:#333;
+	 			}
+	 		}
+	 	}
+	 }
+	  @media screen and (max-width: 1024px) {
+	  		.result-wrap{
+	  			.line{
+	  				right:120px;
+	  			}
+	  			.con-text{
+	  				margin-left:99px;
+	  			}
+  			}
+	  }
+	  @media screen and (max-width: 992px) {
+	  		.result-wrap{
+	  			.line{
+	  				right:50px;
+	  			}
+	  			
+  			}
+	  }
+ }

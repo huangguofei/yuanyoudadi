@@ -1,0 +1,284 @@
+/*
+ * author pizhenhua
+ * day 2017-7-13
+ * 主页样式
+ */
+@import "../../../lib/less/config.less";
+.index-page{
+  .swiper-main{
+      position:relative;
+  }
+  .s-content{
+      position:absolute;
+      text-align:center;
+      width:100%;
+      top:50%;
+      margin-top:-1.6*@f;
+      .head{
+          color:#FFF;
+          font-size:0.48*@f;
+          padding:0 0.2*@f;
+          font-weight: normal;
+      }
+      .reamk{
+          .twoFontColor;
+          line-height:24px;
+          font-size:0.30*@f;
+          padding:0 0.5*@f;
+          padding:0.3*@f 0.2*@f 0.6*@f 0.2*@f;
+      }
+  }
+  .btn-more{
+          border:1px solid #FFF;
+          padding:0.1*@f 0.3*@f;
+          border-radius:8px;
+          font-size:0.28*@f;
+          color:#FFF;
+   }
+  .s-1{
+      position: relative;
+      background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/a9d3cda1929f47a0b722cd212c0b5c26.png) no-repeat center center;
+      background-size: cover;
+      .head{
+          width:100%;
+          margin-top:1.2*@f;
+          color:#FFF;
+          text-align:center;
+          font-weight: normal;
+          animation: topDownShow 1.5s ease 0s 1;
+      }
+      .tea-map{
+          width:100%;
+          height:5.6*@f;
+          margin-top:1.2*@f;
+          position: relative;
+          .map-i{
+            display: inline-block;
+            height:100%;
+            width:100%;
+            position: relative;
+            right:15%;
+          }
+          .map-img{
+            height:100%;
+            position: absolute;
+            right:0;
+            top:0;
+          }
+          .t-item{
+            width:@f;
+            height:0.5*@f;
+            position: absolute;
+            width:3*@f;
+            display: none;
+            .tea-iocn{
+              display: inline-block;
+              width:0.6*@f;
+              height:0.6*@f;
+            }
+            .name{
+              color:#616161;
+              position: relative;
+              top:-0.26*@f;
+              left:-0.1*@f;
+              font-size:0.22*@f;
+            }
+          }
+          .tea-1{
+              bottom:35%;
+              right:-15%;
+              .tea-iocn{
+                background: url(../images/dahonepao-icon.png) no-repeat;
+                background-size:100% auto;
+              }
+            }
+            .tea-2{
+              bottom:25.5%;
+              right:-17%;
+              .tea-iocn{
+                background: url(../images/yinzhen-icon.png) no-repeat;
+                background-size:100% auto;
+              }
+            }
+            .tea-3{
+              bottom:12%;
+              right:-14%;
+              .tea-iocn{
+                background: url(../images/qingxiangtie-icon.png) no-repeat;
+                background-size:100% auto;
+              }
+            }
+            .tea-4{
+              bottom:2.5%;
+              right:-14%;
+              .tea-iocn{
+                background: url(../images/nongxiangtie-icon.png) no-repeat;
+                background-size:100% auto;
+              }
+            }
+            .tea-5{
+              bottom:-6%;
+              right:-1%;
+              .tea-iocn{
+                background: url(../images/dancong-icon.png) no-repeat;
+                background-size:100% auto;
+              }
+            }
+            .tea-6{
+              bottom:-3%;
+              right:19%;
+              .tea-iocn{
+                background: url(../images/maojian-icon.png) no-repeat;
+                background-size:100% auto;
+              }
+            }
+            .tea-7{
+              bottom:-4.5%;
+              right:44%;
+              .tea-iocn{
+                background: url(../images/jinyagongpin-icon.png) no-repeat;
+                background-size:100% auto;
+              }
+              .name{
+                left:0.04*@f;
+              }
+            }
+            .tea-8{
+              bottom:6%;
+              right:44%;
+              .tea-iocn{
+                background: url(../images/jinxiugong.png) no-repeat;
+                background-size:100% auto;
+              }
+              .name{
+                left:0.05*@f;
+              }
+            }
+            .active{
+                .name{
+                    color:#FFF;
+                }
+            }
+
+            
+      }
+      .prod-reamk{
+            width:100%;
+            height:2.6*@f;
+            margin-top:0.5*@f;
+            position: relative;
+            .swiper-prod,.swiper-slide{
+              width:100%;
+              height:100%;
+            }
+            .p-item{
+              width:90%;
+              height:100%;
+              margin:auto;
+              background: url(../images/index-prod-back.png) no-repeat;
+              background-size: 100% 100%;
+              padding:0.2*@f;
+            }
+            .p-img{
+              float:left;
+              width:35%;
+              height:100%;
+              vertical-align: middle;
+              display: table-cell;
+              img{
+                max-width:100%;
+                max-height: 100%;
+                vertical-align: middle;
+                margin-top:0.2*@f;
+              }
+            }
+            .p-info{
+              width:65%;
+              float:left;
+              padding:0.2*@f 0;
+              margin-top:0.15*@f;
+              .p-name{
+                font-size:0.32*@f;
+                color:#FFF;
+              }
+              .p-remak{
+                font-size:0.24*@f;
+                line-height: 18px;
+                overflow: hidden;
+                max-height:1.15*@f;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                .twoFontColor;
+              }
+               .p-detail{
+                    border:1px solid #FFF;
+                    display: inline-block;
+                    padding:0.05*@f 0.1*@f;
+                    margin-top:0.2*@f;
+                    border-radius:8px;
+                    font-size:0.24*@f;
+                    color:#FFF;
+               }
+            }
+            .mes{
+                .hand{
+                  position: absolute;
+                  bottom:-0.3*@f;
+                  z-index:999999;
+                  display: inline-block;
+                  height:0.5*@f;
+                  width:2*@f;
+                  right:100px;
+                  color:#FFF;
+                  background: url(../images/hand.png) no-repeat center left;
+                  background-size:0.45*@f auto;
+                  text-indent:0.5*@f; 
+                  opacity: 0;
+                }
+                .hand-left{
+                    animation: handToLeft 2s ease 0.5s 3;
+                }
+            }
+        
+        }
+  }
+  .swiper-slide-active{
+    .s-content{
+      animation: topDownShow 1.5s ease 0s 1;
+    }
+  }
+  .s-2{
+    background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/6f2e3383a52e4d4d9a603e19db15bcc0.png) no-repeat center center;
+    background-size: cover;
+
+  }
+  .s-3{
+    background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/a698dd547c3f4d448fd8c0501ac785d3.png) no-repeat center center;
+    background-size: cover;
+    .s-content{
+        top:1.5*@f;
+        margin-top:0;
+        .reamk{
+            padding:0.3*@f 0.5*@f 0.6*@f 0.5*@f;
+        }
+    }
+  }
+  .s-4{
+    background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/bf424b8c7b37453e9e7b67e20234f254.png) no-repeat center center;
+    background-size: cover;
+  }
+  .s-5{
+    background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/1efd19c4b2964dd69493223a2fd6ad35.png) no-repeat center center;
+    background-size: cover;
+  }
+  .s-6{
+    background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/39b22f74da244a06ad69f15fc436315a.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  @media all and (orientation: landscape) { 
+      
+  }
+	
+}

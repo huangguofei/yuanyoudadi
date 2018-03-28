@@ -1,0 +1,453 @@
+/*公共less*/
+@import "./config.less";
+html,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    font-family: '\9ED1\4F53', "Microsoft YaHei", STXihei, MingLiu, "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+#app {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+/*页面*/
+.con-page {
+    padding: 20px;
+}
+/*表单*/
+//.search-wrap .el-button--primary{
+//  margin-top:5px;
+//   margin-left:15px;
+//}
+.search-wrap .el-form-item{
+    padding:0 0 5px 0;
+}
+.search-wrap .el-form-item__label{
+    font-size:14px;
+}
+
+//上下
+//background:url(../../images/fight-icon2.png) -199px -297px no-repeat;
+//background:url(../../images/fight-icon2.png) -226px -297px no-repeat;
+.el-bottom-btn{
+    height:60px;
+    line-height: 60px;
+    border:1px solid #dfe6ec;
+    padding-left:20px;
+    border-top:none;
+}
+.el-add-step .el-dialog--tiny{
+    width:456px;
+}
+.el-add-step .el-dialog--tiny{
+    
+}
+.el-step-checkbox{
+    margin-left:26px;
+    margin-top:12px;
+}
+.el-step{
+    font-size:@genSize;
+    color: @mainBank;
+}
+.el-item{
+    display: inline-block;
+    width:108px;
+    font-size: @genSize;
+    color: @mBack;
+    text-align: right;
+    padding:11px 12px 11px 0;
+}
+.el-form-item{
+    margin-bottom:20px;
+}
+.el-dialog-addRole .el-dialog--small{
+    width:600px;
+}
+.el-dialog-addRole  .el-col-12{
+    margin-bottom:20px;
+}
+.el-dialog--tiny{
+    width:44%;
+}
+.el-dialog-input{
+    width:320px;
+    margin:0 auto;
+}
+.el-del-tit .el-del-titChild{
+    font-size:@genSize;
+    position:relative;
+    width:360px;
+    margin:0 auto;
+    text-indent: 40px;
+}
+.el-del-tit .el-del-titChild:before{
+    content:'';
+    display: block;
+    width:34px;
+    height:34px;
+    background:url(../../images/fight-icon2.png) -298px -234px no-repeat;
+    position:absolute;
+    left:0;
+    top:-8px;
+}
+.el-add-staff .el-dialog--small{
+    width:628px;
+}
+.el-add-depart .el-dialog--small{
+    width:480px;
+}
+.el-dialog__body{
+    padding:30px 0;
+}
+.el-form-item__label {
+    font-size: @formSize;
+    color: @formTColor;
+}
+.el-input__inner {
+    border-radius: 2px;
+    font-size: @detSize;
+    width:240px;
+}
+.el-textarea__inner{
+    width:240px;
+}
+.el-input-search {
+    margin-left: 10px;
+}
+/*面包屑*/
+.el-breadcrumb {
+    font-size: @breadSize;
+    color: @breadColor;
+}
+/*按钮组*/
+.el-button-red{
+    height: 32px;
+    line-height: 32px;
+    width: 120px;
+    padding: 0;
+}
+.el-button {
+    border-radius: 2px;
+}
+/*.el-button--primary {
+    background-color: @mainBank;
+    border: 1px solid @mainBank;
+}*/
+.el-button-del {
+    border-color: @mesRed;
+    color: @mesRed;
+}
+.el-icon-plus:before {
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+    left: -2px;
+}
+/*单选按钮*/
+.search-wrap .el-radio-button__inner{
+    margin-right:20px;
+    border:1px solid @borderColor;
+    border-radius: none;
+}
+.search-wrap .el-radio-button:first-child .el-radio-button__inner{
+    border-radius: 0;
+    border-left:none;
+}
+.search-wrap .el-radio-button:last-child .el-radio-button__inner {
+    border-radius: 0;
+}
+/*表格*/
+//.el-form-item{
+//  margin:24px 0;
+//}
+
+.addField-wrap .el-dialog--small{
+    width:440px;
+}
+.el-table{
+    margin-top:30px;
+}
+.el-table th {
+    color: @thColor;
+    font-size: @thSize;
+    height: 50px;
+}
+.el-table td {
+    height: 60px;
+    color: @tdColor;
+    font-size: @tdSize;
+}
+.el-table tr:hover {
+    background: @selectColor;
+}
+.el-table .el-button-del,
+.el-table .el-button-edit,
+.el-table .el-button-end {
+    height: 32px;
+    line-height: 32px;
+    width: 80px;
+    padding: 0;
+}
+.el-table .normal{
+    color:@pagerBack;
+}
+.el-table .delete{
+    color:@mesRed;
+}
+.el-table .forbidden{
+    color:@assBack;
+}
+/*分页*/
+.el-pagination{
+    margin-top:10px;
+    text-align: right;
+}
+.el-pager li.active {
+    background: @pagerBack;
+}
+.el-pager li,
+.el-pagination .btn-prev,
+.el-pagination .btn-next {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: @pagerSize;
+}
+.el-pager li.btn-quicknext,
+.el-pager li.btn-quickpre {
+    line-height: 36px;
+}
+/*模态框*/
+.el-dialog__title {
+    color: @diaTitleColor;
+    font-size: @diaTitleSize;
+    font-weight: normal;
+}
+/*查询区域*/
+.search-wrap {
+    background: @fillBack;
+    padding: 10px;
+    margin: 20px 0;
+    border:1px solid @borderColor;
+    .el-form-item{
+        margin:0;
+    }
+    .s-right{
+        float:right;
+    }
+    .el-input__inner{
+        width:100%;
+    }
+}
+/*图标*/
+.fight-icon{
+	background: url(../../images/fight-icon2.png) no-repeat;
+	background-size:514 383;
+}
+
+/*left-menu*/
+/*.el-submenu.is-opened .el-menu-item-group__title a{
+    color:#FDC700;
+}*/
+.el-menu-item-group__title a{
+    color:#fff;
+}
+.el-menu-item.is-active a{
+    color:#20a0ff !important
+}
+.el-submenu__title {
+    font-size: @mSize1;
+    color: @mColor1;
+}
+.is-opened .el-submenu__title a,
+.is-opened .el-submenu__title {
+    color: #20a0ff;
+}
+.el-menu-item-group__title {
+    font-size: @mSize2;
+    color: @mSize2;
+}
+.el-menu-item a {
+    font-size: @mSize3;
+    color: @mSize3;
+}
+.el-menu--dark{
+    background: @mBack;
+}
+.el-menu--dark .el-submenu .el-menu{
+    background: #515868;
+}
+.el-menu-item-group__title{
+    padding-left:38px !important;
+}
+.el-submenu .el-menu-item-group .el-menu-item-group__title{
+    margin-bottom:20px;
+
+}
+.el-submenu .el-menu-item{
+    padding-left:58px !important;
+    height:0px;
+    line-height: normal;
+    margin-bottom:38px;
+    a{
+        color:@mColor3;
+    }
+}
+.el-submenu{
+    .fight-icon{
+         position: relative;
+        top:8px;
+        left:3px;
+        display: inline-block;
+        width:26px;
+        height:28px;
+    }
+    .el-icon-staff{
+        background-position:-32px -240px;
+    }
+    .el-icon-client{
+        top:6px;
+        background-position:-182px -237px;
+    }
+    .el-icon-sell{
+        left:0;
+         background-position:-78px -237px;
+    }
+    .el-icon-system{
+        left:0;
+        background-position:-129px -237px;
+    }
+    .el-icon-child{
+        position: relative;
+        top:-3px;
+        left:3px;
+        display: inline-block;
+        width:8px;
+        height:8px;
+        border-left:1px solid rgba(255, 255, 255, 0.8);
+        border-bottom:1px solid rgba(255, 255, 255, 0.8);
+    }
+
+}
+.is-opened .el-submenu__title a, 
+.is-opened .el-submenu__title{
+    color:#FFF;
+}
+/*三级菜单*/
+.el-menu-item a {
+    color: #fff;
+}
+/*二级菜单*/
+.el-menu-item-group__title {
+    color: #fff;
+}
+/*一级菜单*/
+.el-submenu__title a {
+    color: #fff;
+}
+.el-menu-item {
+    font-size: @mSize1;
+    color: @mColor1;
+}
+.float-search-right {
+    float: right;
+}
+.float-search-left {
+    float: left;
+}
+
+/*shop-detail-tab*/
+table.shop-detail-tab {
+    border: 1px solid @borderColor;
+    border-top: none;
+    width: 100%;
+    tbody {
+        tr {
+            td {
+                padding: 20px 0;
+                color: @mainColor;
+                font-size: @twoSize;
+            }
+            td:first-child {
+                width: 120px;
+                text-align: right;
+                color: @address;
+            }
+        }
+    }
+}
+/*上传图片*/
+ .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    width: 145px;
+    height: 145px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #20a0ff;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 145px;
+    height: 145px;
+    line-height: 145px;
+    text-align: center;
+  }
+  .avatar {
+    max-width: 145px;
+    max-height: 145px;
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+

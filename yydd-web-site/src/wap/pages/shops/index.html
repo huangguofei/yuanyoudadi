@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>源优大地终端体验中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="源优大地,走遍大地,优选好茶" />
+    <meta name="keywords" content="源优大地" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="../../js/plugin/idangerous.swiper.css">
+    <script type="text/javascript" src="../../js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/plugin/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.min.js"></script>
+     @@include('../include/header.tpl')
+</head>
+<body>
+  <div class="shops-page comm-page">
+      @@include('../include/nar.tpl')
+      @@include('../include/goods.tpl')
+     <div class="panel-wrap p-1">
+            <div class="pan-con">
+                <h2 class="title">香港顶尖设计团队操刀，融东方文化底蕴与时尚科技于一体，<br/>打造过目不忘的终端体验</h2>
+            </div>
+            <div class="arrow"><a href="javascript:void(0)"></a></div>
+      </div>
+      <div class="panel-content">
+             <div class="panel-wrap p-2">
+                  <h2 class="title">全部采用水性环保漆，造价比油性漆高出52%，践行天然环保的绿色美学！</h2>
+                  <div class="swiper-con">
+                      <div class="swiper-live">
+                          <div class="swiper-wrapper">
+                              <div class="swiper-slide l-1"></div>
+                              <div class="swiper-slide l-2"></div>
+                              <div class="swiper-slide l-3"></div>
+                              <div class="swiper-slide l-4"></div>
+                            </div>
+                      </div> 
+                  </div>
+            </div>
+             @@include('../include/footer.tpl')
+      </div>
+      
+     </div>
+  </div>
+
+    <script>
+         $(function() {
+              var mySwiperLive = new Swiper('.swiper-live',{
+                    grabCursor: true,
+                    paginationClickable: true,
+                    centeredSlides: true,
+                    slidesPerView: 1.5,
+                    speed:1000,
+                })
+              mySwiperLive.swipeTo(1)
+          })
+      
+    </script>
+</body>
+</html>

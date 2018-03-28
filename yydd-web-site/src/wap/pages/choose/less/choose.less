@@ -1,0 +1,141 @@
+/**
+.choose-conr-icon{background:url(../images/choose-conr-icon.png)  no-repeat;background-size:244px 1483px}
+.资源 11{height:73px;width:125px;background-position:0 0;}
+.资源 12{height:78px;width:179px;background-position:0 -73px;}
+.资源 1{height:151px;width:192px;background-position:0 -151px;}
+
+*/
+ @import "../../../lib/less/config.less";
+.choose-page{
+	width:100%;
+ 	height:100%;
+ 
+  .choose-conr-icon{
+    background:url(../images/choose-conr-icon.png)  no-repeat;
+    background-size:244px 1483px
+  }
+ 	.swiper-container{
+      width:100%;
+      height:100%;
+      .slide-new{
+        width:100%;
+        height: 100%;
+      }
+      .slide-1{
+        background: url(../images/m-back1.jpg) no-repeat center  center;
+        background-size:cover;
+        .con-text{
+          height:151px;width:192px;background-position:0 -151px;
+          margin-left:-96px;
+          margin-top:-75.5px;
+        }
+      }
+      .slide-2{
+        background: url(../images/m-back1.jpg) no-repeat center  center;
+        background-size:cover;
+        .slide-left{
+          height:40%;
+          padding-top:0.6*@f;
+        }
+        .line{
+            border-top:1px solid #CCC;
+            width:80%;
+            margin:auto;
+        }
+        .slide-right{
+          height:55%;
+        }
+        .con-text{
+          height:151px;width:192px;background-position:0 -151px;
+          margin-left:-96px;
+          margin-top:-55.5px;
+        }
+      }
+ 
+ 	}
+ .corporeity-wrap{
+    margin:auto;
+    text-align: center;
+    padding:0.6*@f 0.2*@f;
+    color:#FFF;
+    .bottom{
+      color: @acolor;
+      a{
+           color: @acolor;
+      }
+      text-align: center;
+      .testing, .next,.prev,.confim{
+        cursor: pointer;
+        padding-bottom:5px;
+        border-bottom:1px solid @acolor;
+        font-size:0.24*@f;
+      }
+      .prev{
+        margin-right:45px;
+        display: none;
+      }
+      .prev:active,.next:active{
+        color:#FFF;
+        border-bottom:0;
+      }
+      .confim{
+        display: none;
+      }
+    }
+    .select-cor{
+      .cor-list{
+        padding:0.42*@f 0;
+        .c-item{
+          width:@f;
+          height:@f;
+          line-height: @f;
+          font-size: 0.2*@f;
+          display: inline-block;
+          border:1px solid #eee;
+          text-align: center;
+          vertical-align: middle;
+          border-radius:50%;
+          cursor: pointer;
+          margin-left:0.1*@f;
+        }
+        .active{
+          background: @bcolor;
+          color:#FFF;
+          border-color:@bcolor;
+        }
+      }
+      
+    }
+ }
+
+  .isSubmit{
+      display: none;
+      position: absolute;
+      z-index:10009;
+      width:200px;
+      background: #000;
+      color:#FFF;
+      top:50%;
+      left:50%;
+      margin-left:-100px;
+      margin-top:-10px;
+      padding:12px 0;
+      text-align: center;
+      border-radius:10px;
+   }
+   @media all and (orientation: landscape){
+      .swiper-container .swiper-wrapper .slide-2{
+           .slide-left{
+              width:40%;
+           }
+           .slide-right{
+              width:60%;
+           }
+      }
+      .corporeity-wrap{
+          .select-cor{
+            margin-top:-0.5*@f;
+          }
+      }
+   }
+}

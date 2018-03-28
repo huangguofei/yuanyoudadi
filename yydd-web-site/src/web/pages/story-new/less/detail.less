@@ -1,0 +1,61 @@
+@import "../../../lib/less/config.less";
+.story-detail-page{
+	background: #FFF;
+	width:100%;
+	height:100%;
+	overflow-y: auto;
+	position: relative;
+	.head-wrap{
+		position: fixed;
+		.head-buy .point i{
+			background:@acolor;
+		}
+	}
+	.content{
+		max-width:1440px;
+		margin:auto;
+		text-align: center;
+		.header{
+			margin-top:0;
+			font-size:42px;
+			padding-top:160px;
+			color:@acolor;
+			padding-bottom:60px;
+			letter-spacing: 5px;
+		}
+		.reamk{
+			font-size:22px;
+			margin: 30px 0;
+			letter-spacing: 3px;
+		}
+		.img-wrap{
+			img{
+				width:100%;
+			}
+		}
+		.back-all{
+			img{
+				width:100%;
+			}
+		}
+	}
+	.back-reamk{
+		background: rgb(28,44,67);
+		color:#FFF;
+		margin-top:-3px;
+		padding:30px;
+		.shop-name{
+			font-size:14px;
+			color:#666;
+			margin-top:-20px;
+			padding-bottom:20px;
+		}
+	}
+	.returnUp{
+		position:fixed;
+		bottom:0;
+		left:50%;
+		width:100px;
+		margin-left:-50px;
+	}
+}

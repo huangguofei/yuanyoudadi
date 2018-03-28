@@ -1,0 +1,194 @@
+@import "../../../lib/less/config.less";
+.story-new-page{
+	width:100%;
+	height:100%;
+	background: #FFF;
+	.head-wrap{
+		background: none;
+	}
+	.head-back{
+		background: rgba(0, 0, 0, 0.7);
+	}
+	.swiper-container,.swiper-wrapper{
+	  	width:100%;
+		height:100%;
+	}
+	.main-layer{
+		position: absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/7bdf055149964b44bfa71f58d7bb5cdb.png) no-repeat;
+		background-size: cover;
+		.content{
+			position: absolute;
+			width:100%;
+			top:50%;
+			margin-top:-3*@f;
+			text-align: center;
+			color:#FFF;
+			font-weight: bold;
+			.header{
+				font-size:0.4*@f;
+				padding:0.3*@f 0;
+				letter-spacing:0.06*@f;
+			}
+			.reamk{
+				font-size:0.3*@f;
+				padding:0.1*@f 0;
+			}
+		}
+		
+	}
+	.two-layer{
+		position: absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background: rgba(0, 0, 0, 0.7);
+		.content{
+			padding-top:1.2*@f;
+			text-align: center;
+			.header{
+				display: none;
+				font-size:0.4*@f;
+				padding:0.3*@f 0;
+				letter-spacing:0.06*@f;
+				color:@acolor;
+			}
+			.reamk{
+				color:#eee;
+				padding:0.06*@f 0;
+			}
+			.img-wrap{
+				width:80%;
+				margin:auto;
+				text-align: center;
+				padding:0.3*@f 0;
+				img{
+					max-width:100%;
+					max-height:100%;
+				}
+			}
+
+		}
+		.more-wrap{
+			position: absolute;
+			width:100%;
+			bottom: 0.5*@f;
+			text-align: center;
+			font-size:0.28*@f;
+			a{
+				color:@acolor;
+			}
+			i{
+				position: absolute;
+				top:0.3*@f;
+				left:50%;
+				margin-left: -0.25*@f;
+				background-size: 0.5*@f auto;
+				background-position:0 -0.5*@f;
+				display: inline-block;
+				width:0.5*@f;
+				height:0.5*@f;
+			}
+		}
+	}
+	.active-layer{
+		.content{
+			
+			.header{
+				display: block;
+			}
+		}
+		
+	}
+	.three-layer{
+		position: absolute;
+		left:0;
+		top:0;
+		height:100%;
+		background: #FFF;
+		.content{
+			text-align: center;
+			.header{
+				font-size:0.4*@f;
+				padding:0.3*@f 0;
+				letter-spacing:0.06*@f;
+				color:@acolor;
+			}
+			.reamk{
+				font-size: 0.28*@f;
+				padding-bottom:0.2*@f;
+				color:#333;
+				padding:0 0.3*@f 0.2*@f 0.3*@f;
+			}
+		}
+		.look-more{
+			color:#000;
+			display: inline-block;
+			padding-bottom:0.3*@f;
+		}
+		.look-more:active,.look-more:hover,{
+			color:@acolor;
+		}
+		.up-wrap{
+			margin-top:1.5*@f;
+			text-align: center;
+			position: relative;
+			a{
+				color:@acolor;
+			}
+			i{
+				position: absolute;
+				top:-0.4*@f;
+				left:50%;
+				margin-left: -0.25*@f;
+				background-size: 0.5*@f auto;
+				display: inline-block;
+				width:0.5*@f;
+				height:0.5*@f;
+			}
+		}
+		.img-wrap{
+			text-align: center;
+			img{
+				max-width:80%;
+			}
+		}
+		
+	}
+	.main-bottom{
+			position: absolute;
+			width:100%;
+			padding:0.5*@f 0;
+			bottom:0;
+			background: rgba(0, 0, 0, 0.7);
+			text-align: center;
+			.reamk{
+				color:@acolor;
+				font-weight: bold;
+				font-size:0.36*@f;
+				padding:0.42*@f 0;
+				letter-spacing:0.06*@f;
+			}
+			.more-nar{
+				text-align: center;
+				font-size:0.24*@f;
+				position: relative;
+				color:@acolor;
+				i{
+					position: absolute;
+					top:0.25*@f;
+					left:0.25*@f;
+					background-size: 0.5*@f auto;
+					background-position:0 -0.5*@f;
+					display: inline-block;
+					width:0.5*@f;
+					height:0.5*@f;
+				}
+			}
+		}
+}

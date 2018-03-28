@@ -1,0 +1,191 @@
+ @import "../../../lib/less/config.less";
+.result-page{
+	height: 100%;
+	background: url(../images/m-back1.jpg) no-repeat center  center;
+    background-size:cover;
+    overflow: hidden;
+    .choose-conr-icon{
+	    background:url(../images/choose-conr-icon.png)  no-repeat;
+	    background-size:244px 1483px
+	  }
+    .result-wrap{
+      	width:100%;
+      	height:100%;
+        .slide-left{
+            height:30%;
+            padding-top:0.6*@f;
+            position: relative;
+            .con-text{
+            	position: absolute;
+            	left:50%;
+            	top:50%;
+            }
+        }
+        .slide-right{
+          height:70%;
+        }
+        .con-text{
+            position: absolute;
+            left:50%;
+            height:73px;width:125px;background-position:0 0;
+            margin-left:-62.5px;
+            margin-top:-36.5px;
+            text-align: center;
+            .name{
+                position: absolute;
+                display: inline-block;
+                bottom:-0.6*@f;
+                left:50%;
+                margin-left:-56px;
+                color:@acolor;
+                font-size:26px;
+                border-bottom:1px solid @acolor;
+            }
+        }
+        .reamk{
+            padding:0 0.6*@f;
+            color:#FFF;
+            text-align: center;
+            line-height: 20px;
+        }
+          
+          .bottom{
+              position: absolute;
+              width:100%;
+              bottom: 0.6*@f;
+              color:@acolor;
+              text-align: center;
+              .recommend{
+                 width:100%;
+                  .re-next{
+                  border-bottom:1px solid @acolor;
+                  }
+
+                }
+              .share{
+                  margin-top:0.2*@f;
+                  span{
+                      border-bottom:1px solid @acolor;
+                  }
+              }
+          }
+     }
+
+     .recommend-wrap{
+        height:100%;
+       	overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        background: #000;
+       	.prod-wrap{
+    			padding-top:1.2*@f;
+    			padding:@f 0.2*@f 0 0.2*@f;
+          .head{
+             width:100%;
+             color:@acolor;
+             text-align: center;
+             padding:0.2*@f 0;
+              .h1{
+                 border-bottom:1px solid @acolor;
+                 display: inline-block;
+                 padding:0.1*@f;
+              }
+            }
+      			.p-item{
+          				float:left;
+          				width:50%;
+          				height:4.5*@f;
+          				color:#eee;
+          				text-align: center;
+          				.pro-img{
+            					height:2.2*@f;
+            					text-align: center;
+            					margin-top:0.2*@f;
+            					padding:0.2*@f;
+            					line-height: 2.2*@f;
+          					img{
+            						max-height:100%;
+            						max-width: 80%;
+            						vertical-align: middle;
+          					}
+          				}
+          				a{
+          					 color:#FFF;
+          				}
+          				.en{
+          					 font-size:0.24*@f;
+          				}
+          				.zh{
+          					 font-size:0.32*@f;
+          				}
+      			}
+  		
+	  	}
+	 }
+    .share-content{
+          position: fixed;
+          display: none;
+          bottom:-300px;
+          left:0;
+          z-index:999999;
+          width:100%;
+          background: #000;
+          .title{
+             font-size: 0.24*@f;
+          }
+          .t1{
+            margin-top:0.2*@f;
+          }
+          .close{
+              display: inline-block;
+              position: absolute;
+              right:10px;
+              top:5px;
+              width:20px;
+              height:20px;
+              text-align: center;
+              color:#FFF;
+              cursor: pointer;
+          }
+          .close:before{
+              content : "\2715";
+
+          }
+          .close:hover{
+              color:#333;
+          }
+          .container{
+              padding:30px 20px;
+              color:#FFF;
+              .share-wrap{
+              	padding:20px 0;
+                text-align: center;
+              	.share-path{
+              		display: inline-block;
+              		border:1px solid #666;
+              		padding:10px;
+              		width:95%;
+                  height:50px;
+              		border-radius: 5px;
+              		background: #000;
+              		font-size:14px;
+              		color:#FFF;
+                  word-wrap: break-word;
+                  word-break: normal;
+                  text-align: left;
+              	}
+              	.copy{
+              		cursor: pointer;
+                  display: inline-block;
+                  margin-top:0.5*@f;
+                  color:@acolor;
+                  border-bottom:1px solid @acolor;
+                  font-weight: bold;
+                  padding-bottom:2px;
+              	}
+              	.copy:hover{
+              		color:@acolor;
+              	}
+              }
+          }
+      }
+}

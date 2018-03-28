@@ -1,0 +1,467 @@
+/*
+ * author pizhenhua
+ * day 2017-7-13
+ * 主页样式
+ */
+
+@import "../../../lib/less/config.less";
+.index-page {
+    .s-back {
+        background-position: center center;
+        background-size: cover;
+    }
+    .s-1 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/a9d3cda1929f47a0b722cd212c0b5c26.png) no-repeat center center;
+        background-size: cover;
+        .yydd-reamk {
+            width: 489px;
+            height: 67px;
+            margin: auto;
+            position: absolute;
+            z-index: 9999;
+            margin-left: -244.5px;
+            left: 50%;
+            top: 120px;
+            display: inline-block;
+            background: url("../images/index-icon1.png") no-repeat;
+            animation: topDownShow 0.5s ease 0.5s 1;
+        }
+        .tea-map {
+            width: 46%;
+            position: absolute;
+            z-index: 99;
+            top: 50%;
+            margin-top: -250px;
+            margin-left: 8%;
+            text-align: right;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .t-item {
+                position: absolute;
+                display: inline-block;
+                height: 50px;
+                width: 150px;
+                .tea-iocn {
+                    display: inline-block;
+                    width: 60px;
+                    height: 60px;
+                }
+                .name {
+                    color: #979797;
+                    position: relative;
+                    top: -28px;
+                    white-space: nowrap;
+                    word-break: keep-all;
+                }
+            }
+            .active {
+                .name {
+                    color: #FFF;
+                }
+            }
+            .tea-1 {
+                bottom: 35.5%;
+                right: -8%;
+                .tea-iocn {
+                    background: url(../images/dahonepao-icon.png) no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+            .tea-2 {
+                bottom: 26%;
+                right: -13%;
+                .tea-iocn {
+                    background: url(../images/yinzhen-icon.png) no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+            .tea-3 {
+                bottom: 13%;
+                right: -12%;
+                .tea-iocn {
+                    background: url(../images/qingxiangtie-icon.png) no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+            .tea-4 {
+                bottom: 3%;
+                right: -12%;
+                .tea-iocn {
+                    background: url(../images/nongxiangtie-icon.png) no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+            .tea-5 {
+                bottom: -4%;
+                right: 8.5%;
+                .tea-iocn {
+                    background: url(../images/dancong-icon.png) no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+            .tea-6 {
+                bottom: -3%;
+                right: 32%;
+                .tea-iocn {
+                    background: url(../images/maojian-icon.png) no-repeat;
+                    background-size: 100% auto;
+                }
+            }
+            .tea-7 {
+                bottom: -4.5%;
+                right: 57%;
+                .tea-iocn {
+                    background: url(../images/jinyagongpin-icon.png) no-repeat;
+                    background-size: 100% auto;
+                }
+                .name {
+                    right: -10px;
+                }
+            }
+            .tea-8 {
+                bottom: 6%;
+                right: 59%;
+                .tea-iocn {
+                    background: url(../images/jinxiugong.png) no-repeat;
+                    background-size: 100% auto;
+                }
+                .name {
+                    right: -10px;
+                }
+            }
+            .prod-reamk {
+                position: absolute;
+                top: 50%;
+                margin-top: -200px;
+                right: -480px;
+                width: 321px;
+                height: 430px;
+                .p-item {
+                    display: none;
+                    background: url(../images/index-prod-back.png) no-repeat;
+                    background-size: cover;
+                    text-align: center;
+                    color: #FFF;
+                    width: 100%;
+                    height: 445px;
+                    padding-left: 10px;
+                    .p-img {
+                        height: 240px;
+                        img {
+                            height: 90%;
+                            margin-top: 5%;
+                        }
+                    }
+                    .p-name {
+                        font-size: 18px;
+                    }
+                    .p-remak {
+                        font-size: 14px;
+                        padding: 10px 20px;
+                        line-height: 24px;
+                        height: 60px;
+                        overflow: hidden;
+                        .twoFontColor;
+                    }
+                    .p-detail {
+                        color: #FFF;
+                        border-radius: 8px;
+                        width: 110px;
+                        margin: auto;
+                        margin-top: 15px;
+                        display: inline-block;
+                        padding: 5px 20px;
+                        border: 1px solid #fff;
+                    }
+                }
+                .active {
+                    display: block;
+                    animation: leftToRight 1.2s ease 0.5s 1;
+                }
+            }
+        }
+        .tea-list {
+            position: absolute;
+            width: 100%;
+            top: 200px;
+            text-align: center;
+            .tea-item {
+                display: inline-block;
+                text-align: center;
+                width: 90px;
+                vertical-align: top;
+                cursor: pointer;
+                .tea-img {
+                    display: inline-block;
+                    width: 80px;
+                    height: 80px;
+                }
+                .name {
+                    display: inline-block;
+                    margin-top: 10px;
+                    width: 20px;
+                    color: #616161;
+                }
+            }
+            .active {
+                position: relative;
+                .name {
+                    color: #FFF;
+                }
+                .tea-img {
+                    background-color: #555;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .swiper-button {
+            position: absolute;
+            top: 50%;
+            margin-top: -50.5px;
+            width: 101px;
+            height: 101px;
+            cursor: pointer;
+        }
+        .swiper-button-prev {
+            background: url(../images/prev-icon.png) no-repeat center center;
+            background-size: cover;
+            left: 12%;
+        }
+        .swiper-button-next {
+            right: 0;
+            background: url(../images/next-icon.png) no-repeat center center;
+            background-size: cover;
+            right: 12%;
+        }
+    }
+    .arrow {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 20px;
+        text-align: center;
+        z-index: 1;
+        a {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(../images/down-icon.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+    .swiper-slide {
+        .container {
+            position: relative;
+            height: 100%;
+            .s-content {
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                margin-top: -160px;
+                text-align: center;
+                .head {
+                    font-size: 52px;
+                    color: #FFF;
+                    font-weight: normal;
+                }
+                .reamk {
+                    font-size: 18px;
+                    .twoFontColor;
+                    letter-spacing: 2px;
+                    padding: 10px 0 80px 0;
+                }
+                .btn-more {
+                    border: 1px solid #FFF;
+                    color: #FFF;
+                    font-size: 28px;
+                    width: 180px;
+                    height: 52px;
+                    line-height: 52px;
+                    display: inline-block;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    .swiper-slide-active {
+        .s-content {
+            animation: topDownShow 1.5s ease 0s 1;
+        }
+        .leftFlyRight {
+            animation: leftFlyRight 0.5s ease 1s 1;
+        }
+        .rightFlyLeft {
+            animation: rightFlyLeft 0.5s ease 1s 1;
+        }
+    }
+    .s-20 {
+        background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/241af7a79bb34920b94f9f7420507a14.png) no-repeat center center;
+        background-size: cover;
+        position: relative;
+        a {
+            border: 0!important;
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+        .vide {
+            display: none;
+            width: 80%;
+            position: absolute;
+            top: -200px;
+            left: 10%;
+            video {
+                width: 100%;
+                 z-index: 3;
+                 position: relative;
+            }
+            a {
+                position: absolute;
+                top: -15px;
+                right: -15px;
+                display: inline-block;
+                z-index: 3;
+                img {
+                    width: 30px;
+                    height: auto;
+                    background: #fff;
+                    border-radius: 15px;
+                }
+            }
+            .bg {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                background: #000;
+                filter: alpha(opacity=50);
+                -moz-opacity: 0.5;
+                -khtml-opacity: 0.5;
+                opacity: 0.5;
+                z-index: 2;
+            }
+        }
+    }
+    .s-2 {
+        background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/b57361ac56444174819de5ba2991d2f4.png) no-repeat center center;
+        background-size: cover;
+    }
+    .s-3 {
+        background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/a9d3cda1929f47a0b722cd212c0b5c26.png) no-repeat center center;
+        background-size: cover;
+        .container .s-content {
+            height: 100%;
+            display: inline-block;
+            top: 0;
+            margin-top: 120px;
+            .tea-img {
+                max-width: 1000px;
+                height: 50%;
+                margin: auto;
+                padding: 30px 0;
+                img {
+                    max-width: 90%;
+                    max-height: 90%;
+                    margin-left: -30px;
+                }
+            }
+        }
+    }
+    .s-4 {
+        background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/bf424b8c7b37453e9e7b67e20234f254.png) no-repeat center center;
+        background-size: cover;
+    }
+    .s-5 {
+        background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/a2fb9a72771146f8b54d05e7c1664aa0.png) no-repeat center center;
+        background-size: cover;
+    }
+    .s-6 {
+        background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/39b22f74da244a06ad69f15fc436315a.png) no-repeat center center;
+        background-size: cover;
+    }
+    @media screen and (max-width: 1366px) {
+        .s-1 {
+            .swiper-button {
+                margin-top: -40px;
+                width: 80px;
+                height: 80px;
+            }
+            .swiper-button-prev {
+                left: 10px;
+            }
+            .swiper-button-next {
+                right: 10px;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .s-1 {
+            .tea-map {
+                margin-top: -200px;
+                .prod-reamk {
+                    right: -420px;
+                }
+                .t-item {
+                    height: 50px;
+                    width: 120px;
+                    .tea-iocn {
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .name {
+                        font-size: 13px;
+                        top: -22px;
+                        white-space: nowrap;
+                        word-break: keep-all;
+                    }
+                }
+                .tea-1 {
+                    bottom: 33%;
+                    right: -10%;
+                }
+                .tea-2 {
+                    bottom: 24.5%;
+                    right: -15%;
+                }
+                .tea-3 {
+                    bottom: 10.5%;
+                    right: -15%;
+                }
+                .tea-4 {
+                    bottom: 1%;
+                    right: -15%;
+                }
+                .tea-5 {
+                    bottom: -7%;
+                    right: 6.5%;
+                }
+                .tea-6 {
+                    bottom: -5%;
+                    right: 30%;
+                }
+                .tea-7 {
+                    bottom: -5.5%;
+                    right: 57%;
+                    .name {
+                        right: -10px;
+                    }
+                }
+                .tea-8 {
+                    bottom: 4%;
+                    right: 59%;
+                    .name {
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+}

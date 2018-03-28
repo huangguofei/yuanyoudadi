@@ -1,0 +1,83 @@
+.pad-page{
+	position: relative;
+	background: #FFF;
+	height:100%;
+	overflow-y: hidden;
+	background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/bf424b8c7b37453e9e7b67e20234f254.png) no-repeat center center;
+	background-size: cover;
+	.logo{
+		position: absolute;
+		width:100%;
+		text-align: center;
+		top:-80px;
+		animation: logoanm 2s ease 2s 1;
+	}
+	.menu-list{
+		text-align: center;
+		margin-top:200px;
+		position: relative;
+		.menu-item{
+			display: inline-block;
+			width:85px;
+			margin:15px;
+			position: relative;
+			.con{
+				position: absolute;
+				width:100%;
+				top:0;
+				left:0;
+			}
+			.menu-icon{
+				width:85px;
+				height:85px;
+				border-radius: 5px;
+				background: #ddd;
+				vertical-align: middle;
+				img{
+					width:90%;
+					vertical-align: middle;
+				}
+			}
+			.name{
+				color:#f9f9f9;
+				text-align: center;
+				margin-top:8px;
+			}
+		}
+		.menu-1{
+			.con{
+				animation: menuanm1 0.5s ease 0s 1;
+			}
+			
+		}
+		.menu-2{
+			.con{
+				animation: menuanm2 2s ease 0s 1;
+			}
+			
+		}
+	}
+	@-webkit-keyframes logoanm{
+	    0% {top:-10px;opacity: 0}
+	    10% {top:-60px;opacity: 0.6}
+	    20% {top:-10px;}
+	    30% {top:-60px;opacity: 0.6}
+	    40% {top:-10px;opacity: 0.8}
+	}
+	@-webkit-keyframes menuanm1{
+	    0% {left:-300px;}
+	    10% {left:-200px;}
+	    20% {left:-160px;}
+	    30% {left:-120px;}
+	    40% {left:-80px;}
+	    50% {left:-50px;}
+	    60% {left:-0px;}
+	    70% {left:70px;}
+	}
+	@-webkit-keyframes menuanm2{
+	    20% {transform: rotate(0deg);left:0px;}
+	    30% {transform: rotate(40deg);left:120px;}
+	    40% {transform: rotate(60deg);left:160px;}
+	    50% {transform: rotate(40deg);left:180px;}
+	}
+}

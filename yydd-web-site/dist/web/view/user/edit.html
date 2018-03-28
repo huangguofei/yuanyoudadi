@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>客户信息-源优大地</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="源优大地,走遍大地,优选好茶" />
+    <meta name="keywords" content="源优大地" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+    <script type="text/javascript" src="../../js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/main.min.js"></script>
+    <script>
+		var _hmt = _hmt || [];
+		(function() {
+			var host = window.location.host;
+			if(host.indexOf("yuanyoudadi.com") >= 0 || host.indexOf("naturalgiving.cn") >= 0) {
+				  var hm = document.createElement("script");
+
+				  hm.src = "https://hm.baidu.com/hm.js?a80131c47c9510dc37c21b92f3404763";
+
+				  var s = document.getElementsByTagName("script")[0]; 
+
+				  s.parentNode.insertBefore(hm, s);
+		  	}
+		})();
+	
+</script>
+</head>
+<body>
+     <div class="user-edit-page">
+           <div class="pad-head">
+                <a href="/web/view/user/" class="returnPage"></a>
+                <span>编辑信息</span>
+            </div> 
+            <div class="info-con">
+                <div class="panel p-active">
+                    <div class="row">
+                            <div class="ctrl-wrap c-row">
+                                <label>姓名:</label>
+                                <input type="text" class="f-ctrl user-name" id="userName" />
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                             <div class="ctrl-wrap  c-row">
+                                <label>生日:</label>
+                                <input type="text" class="f-ctrl" id="birthday" />
+                            </div>
+                        </div>
+                        <div class="row r-check">
+                             <label>性别:</label>
+                             <div class="check-wrap" id="sex">
+                                <span class="check-item" value="0">男<i></i></span>
+                                <span class="check-item" value="1">女<i></i></span>
+                             </div>
+                        </div>
+                </div>
+                <div class="panel panel-2">
+                    <div class="row">
+                           <div class="ctrl-wrap c-row">
+                                <label>电话:</label>
+                                <input type="tel" class="f-ctrl" id="tel" maxlength="11"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="ctrl-wrap c-row">
+                                <label>微信:</label>
+                                <input type="text" class="f-ctrl" id="weixin"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="ctrl-wrap  c-row">
+                                <label>到店渠道:</label>
+                                <input type="text" class="f-ctrl" id="ditch" />
+                            </div>
+                        </div>
+                </div>
+                 <div class="panel panel-2">
+                    <div class="row">
+                            <div class="ctrl-wrap c-row">
+                                <label>身份证:</label>
+                                <input type="text" class="f-ctrl" id="card" />
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="ctrl-wrap c-row">
+                                <label>地址:</label>
+                                <input type="text" class="f-ctrl" id="address" />
+                            </div>
+                        </div>
+                        
+                </div>
+                 <div class="panel panel-2">
+                        <div class="row r-check">
+                             <label>饮用习惯:</label>
+                             <div class="check-wrap" id="drink">
+                                <span class="check-item" value="0">有<i></i></span>
+                                <span class="check-item" value="1">无<i></i></span>
+                             </div>
+                        </div>
+                        <div class="row r-check">
+                             <label>饮用频率:</label>
+                             <div class="check-wrap" id="frequency">
+                                <span class="check-item" value="0">一天一次<i></i></span>
+                                <span class="check-item" value="1">一天多次<i></i></span>
+                                <span class="check-item" value="2">平时不喝接待客人才喝<i></i></span>
+                             </div>
+                        </div>
+                        
+                </div>
+                 <div class="panel panel-2">
+                        <div class="row r-check">
+                             <label>购买用途:</label>
+                             <div class="check-wrap more-check" id="purpose">
+                                <span class="check-item" value="0">自饮<i></i></span>
+                                <span class="check-item" value="1">送人<i></i></span>
+                                <span class="check-item" value="2">待客<i></i></span>
+                                <span class="check-item" value="3">收藏<i></i></span>
+                             </div>
+                        </div> 
+                      
+                        
+                </div>
+               <div class="panel panel-2">
+                     <div class="row r-check">
+                             <label>口味偏好:</label>
+                             <div class="check-wrap more-check" id="flavor">
+                                <span class="check-item" value="0">龙井<i></i></span>
+                                <span class="check-item" value="1">碧螺春<i></i></span>
+                                <span class="check-item" value="2">极白<i></i></span>
+                                <span class="check-item" value="3">都匀毛尖<i></i></span>
+                                <span class="check-item" value="4">信阳毛尖<i></i></span>
+                                <span class="check-item" value="5">竹叶青<i></i></span>
+                                <span class="check-item" value="6">白毫银针<i></i></span>
+                                <span class="check-item" value="7">白牡丹<i></i></span>
+                                <span class="check-item" value="8">生普<i></i></span>
+                                <span class="check-item" value="9">熟普<i></i></span>
+                                <span class="check-item" value="10">单丛<i></i></span>
+                                <span class="check-item" value="11">大红袍<i></i></span><br/>
+                                <span class="check-item" value="12">铁观音<i></i></span>
+                                <span class="check-item" value="13">其它<i></i></span>
+                             </div>
+                        </div>
+               </div>
+               <div class="panel panel-2">
+                    <div class="row r-check">
+                             <label>所属行业:</label>
+                             <div class="check-wrap more-check" id="industry">
+                                <span class="check-item" value="0">金融<i></i></span>
+                                <span class="check-item" value="1">地产<i></i></span>
+                                <span class="check-item" value="2">科技<i></i></span>
+                                <span class="check-item" value="3">艺术<i></i></span>
+                                <span class="check-item" value="4">娱乐<i></i></span>
+                                <span class="check-item" value="5">传媒<i></i></span>
+                                <span class="check-item" value="6">公务员<i></i></span><br/>
+                                <span class="check-item" value="7">企业主<i></i></span>
+                                <span class="check-item" value="8">其它<i></i></span>
+                             </div>
+                        </div> 
+                </div>
+                <!-- <div class="panel">
+                    <form>
+                        <div class="row">
+                            <div class="ctrl-wrap c-3">
+                                <label>姓名:</label>
+                                <input type="text" class="f-ctrl">
+                            </div>
+                             <div class="ctrl-wrap  c-3">
+                                <label>性别:</label>
+                                <input type="text" class="f-ctrl">
+                            </div>
+                             <div class="ctrl-wrap  c-3">
+                                <label>生日:</label>
+                                <input type="text" class="f-ctrl">
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="ctrl-wrap c-3">
+                                <label>电话:</label>
+                                <input type="tel" class="f-ctrl">
+                            </div>
+                             <div class="ctrl-wrap  c-3">
+                                <label>微信:</label>
+                                <input type="text" class="f-ctrl">
+                            </div>
+                             <div class="ctrl-wrap  c-3">
+                                <label>到店渠道:</label>
+                                <input type="text" class="f-ctrl">
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="ctrl-wrap c-row">
+                                <label>身份证:</label>
+                                <input type="text" class="f-ctrl">
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="ctrl-wrap c-row">
+                                <label>地址:</label>
+                                <input type="text" class="f-ctrl">
+                            </div>
+                            
+                        </div>
+                        <div class="row r-check">
+                             <label>饮用习惯:</label>
+                             <div class="check-wrap">
+                                <span class="check-item active">有<i></i></span>
+                                <span class="check-item">无<i></i></span>
+                             </div>
+                        </div>
+                         <div class="row r-check">
+                             <label>饮用频率:</label>
+                             <div class="check-wrap">
+                                <span class="check-item active">一天一次<i></i></span>
+                                <span class="check-item">一天多次<i></i></span>
+                                <span class="check-item">平时不喝接待客人才喝<i></i></span>
+                             </div>
+                        </div>
+                        <div class="row r-check">
+                             <label>购买用途:</label>
+                             <div class="check-wrap">
+                                <span class="check-item active">自饮<i></i></span>
+                                <span class="check-item">送人<i></i></span>
+                                <span class="check-item">待客<i></i></span>
+                                <span class="check-item">收藏<i></i></span>
+                             </div>
+                        </div> 
+                        <div class="row r-check">
+                             <label>口味偏好:</label>
+                             <div class="check-wrap">
+                                <span class="check-item active">龙井<i></i></span>
+                                <span class="check-item">碧螺春<i></i></span>
+                                <span class="check-item">极白<i></i></span>
+                                <span class="check-item">都匀毛尖<i></i></span>
+                                <span class="check-item">信阳毛尖<i></i></span>
+                                <span class="check-item">竹叶青<i></i></span>
+                                <span class="check-item">白毫银针<i></i></span>
+                                <span class="check-item">白牡丹<i></i></span><br/>
+                                <span class="check-item">生普<i></i></span>
+                                <span class="check-item">熟普<i></i></span>
+                                <span class="check-item">单丛<i></i></span>
+                                <span class="check-item">大红袍<i></i></span>
+                                <span class="check-item">铁观音<i></i></span>
+                                <span class="check-item">其它<i></i></span>
+                             </div>
+                        </div>
+                         <div class="row r-check">
+                             <label>所属行业:</label>
+                             <div class="check-wrap">
+                                <span class="check-item active">金融<i></i></span>
+                                <span class="check-item">地产<i></i></span>
+                                <span class="check-item">科技<i></i></span>
+                                <span class="check-item">艺术<i></i></span>
+                                <span class="check-item">娱乐<i></i></span>
+                                <span class="check-item">传媒<i></i></span>
+                                <span class="check-item">公务员<i></i></span>
+                                <span class="check-item">企业主<i></i></span>
+                                <span class="check-item">其它<i></i></span>
+                             </div>
+                        </div> 
+                        <div class="row">
+                            <button class="confirm">提交</button>
+                            <button class="cancel">取消</button>
+                        </div>
+                    </form>
+                </div> -->
+            </div>
+             <div class="bottom">
+                <button class="prev btn">上一步</button>
+                <button class="next btn">下一步</button>
+                <button class="confirm btn">提交</button>
+            </div>
+
+     </div>  
+     <script type="text/javascript">
+        editModule.init();
+     </script> 
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import "../../../lib/less/config.less";
+.story-detail-page{
+	background: #FFF;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+	.content-d{
+		height:100%;
+		overflow: auto;
+	    -webkit-overflow-scrolling: touch;
+		text-align: center;
+		.header{
+			font-size:0.4*@f;
+			padding:0.6*@f 0 0.3*@f 0;
+			letter-spacing:0.06*@f;
+			color:@acolor;
+			margin-top:1.2*@f;
+		}
+		.reamk{
+			padding:0.3*@f;
+			line-height: 26px;
+		}
+		.img-wrap{
+			text-align: center;
+			img{
+				width:80%;
+			}
+		}
+		.shop-img{
+			width:100%;
+			padding:0;
+			margin:0;
+			font-size:0;
+			margin-bottom: -6px;
+		}
+		.back-reamk{
+			color:#FFF;
+			background: @ccolor;
+			padding:0.3*@f 0;
+			.shop-name{
+				font-size:0.18*@f;
+				color:#666;
+				padding-bottom:0.2*@f;
+			}
+		}
+		
+	}
+	.bottom{
+			padding: 0.5*@f 0.3*@f;
+			display: -webkit-flex;
+	    	display: flex;
+			.left,.right{
+				width:50%;
+				color:@acolor;
+			}
+			.left{
+				border-right:1px solid @acolor;
+				margin-left:-1px;
+				.tel{
+					font-size:0.32*@f;
+					font-weight: bold;
+				}
+			}
+			.right{
+	    		a{
+	    			float:left;
+	    			width:40%;
+	    			display: inline-block;
+	    			text-align: center;
+	    			margin-left:0.2*@f;
+	    			img{
+	    				max-width:90%;
+	    				margin-top:0.16*@f;
+	    			}
+	    		}
+			}
+	}
+	.returnUp{
+		position: absolute;
+		bottom: 0;
+		left:50%;
+		margin-left:-0.9*@f;
+		width:1.8*@f;
+	}
+}

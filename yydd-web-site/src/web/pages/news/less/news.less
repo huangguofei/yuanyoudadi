@@ -1,0 +1,110 @@
+.news-page {
+    .pull-left {
+        float: left;
+        width:460px;
+        height:280px;
+        overflow: hidden;
+    }
+    .pull-right {
+        float: right;
+    }
+    .clearfix() {
+        &:after {
+            content: "";
+            display: block;
+            clear: both
+        }
+        zoom:1
+    }
+    .new-content {
+        min-height: 800px;
+        padding-top: 80px;
+        font-size: 52px;
+        text-align: center;
+        color: #666;
+        //		line-height: 600px;
+        background: #1D1E1C;
+        &>div {
+            width: 1200px;
+            margin: 0 auto;
+            h3 {
+                color: #fff;
+                text-align: left;
+                font-size: 20px;
+            }
+            .news-list {
+                margin-top: 30px;
+                .news-item {
+                    border-bottom: 1px solid #3E3836;
+                    padding: 30px 0;
+                    .clearfix();
+                    img {
+                        height:auto;
+                        max-width: 100%;
+                    }
+                    .news-right {
+                        width: calc(~"100% - 500px");
+                        text-align: left;
+                    }
+                    &>div {
+                        h4 {
+                            font-size: 20px;
+                            color: #DBAB9A;
+                        }
+                        p {
+                            font-size: 14px;
+                            color: #8F908F;
+                        }
+                        .news-time {
+                            margin: 10px 0 20px 0;
+                        }
+                        .news-content {
+                            word-break: break-all;
+                            word-wrap: break-word;
+                            min-height:140px;
+                            line-height: 24px;
+                        }
+                        a {
+                            font-size: 16px;
+                            border-radius: 20px;
+                            padding: 0 25px;
+                            display: inline-block;
+                            background: #4F2E22;
+                            color: #C9BFBC;
+                            height: 35px;
+                            line-height: 35px;
+                            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+            }
+            .page {
+                text-align: center;
+                a {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border: 1px solid #4A4A4A;
+                    border-radius: 3px;
+                    color: #A4A4A4;
+                    vertical-align: middle;
+                    img {
+                        width: 60%;
+                        height: auto;
+                        margin-bottom: 20%;
+                    }
+                }
+                a.active{
+                    border: 0;
+                    background: #DBAB9A;
+                    color: #000;
+                }
+                .page-num {
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

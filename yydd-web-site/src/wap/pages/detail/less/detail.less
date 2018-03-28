@@ -1,0 +1,165 @@
+@import "../../../lib/less/config.less";
+.detail-page{
+	width:100%;
+	height:100%;
+	background: #FFF;
+	.detail-nav{
+		position: fixed;
+		width:100%;
+		height:@f;
+		top:@f;
+		left:0;
+		background: #030303;
+	    background: -moz-linear-gradient(top,  #030303 0%, #191919 100%);
+	    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#191919), color-stop(100%,#191919));
+	    background: -webkit-linear-gradient(top,  #030303 0%,#191919 100%);
+	    background: -o-linear-gradient(top,  #030303 0%,#191919 100%);
+	    background: -ms-linear-gradient(top,  #030303 0%,#191919 100%);
+	    background: linear-gradient(to bottom,  #030303 0%,#191919 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030303', endColorstr='#191919',GradientType=0 );
+	    .left{
+	    	float:left;
+	    	padding-left:0.2*@f;
+	    	line-height: @f;
+		    .prod-name{
+		    	color:#FFFFFF;
+		    }
+	    }
+	    .right{
+	    	float:right;
+	    	line-height: @f;
+	    	.buy-path{
+	    		color:#DBAB9A;
+	    		margin:0 0.2*@f;
+	    	}
+	    }
+	}
+	.title{
+		font-size:0.48*@f;
+		color:#FFF;
+		font-weight: normal;
+		text-align:center;
+		padding:0 0.2*@f;
+	}
+	.reamk{
+		font-size:0.28*@f;
+		.twoFontColor;
+		text-align:center;
+		margin-top:0.2*@f;
+		line-height:26px;
+		padding:0 0.2*@f;
+	}
+	.detail-content{
+		padding-top:1.5*@f;
+		p{
+            font-size: 0;
+        }
+		img{
+			max-width:100%;
+		}
+	}
+	.p-1{
+		padding:1.2*@f 0.2*@f 0.5*@f 0.2*@f;
+		.title,.reamk{
+			color:#000;
+		}
+		.t-list{
+			height:100%;
+		}
+		.t-item{
+			padding:0.3*@f 0;
+			text-align: center;
+			.t-img{
+				width:60%;
+				margin:auto;
+				img{
+					width:100%;
+				}
+			}
+			.title{
+				font-size:0.28*@f;
+			}
+			.look-reports{
+				color:#FF6601;
+				margin-top:5px;
+				display: inline-block;
+			}
+		}
+	}
+	.p-2{
+		background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/42a139aa67154dd59452bf4e18669888.png)  no-repeat center center;
+		background-size: cover;
+		height:8*@f;
+		padding:0.6*@f 0;
+	}
+	.p-3{
+		background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/faf0fd8d8bcc422dab642275db06cf78.png)  no-repeat center center;
+		background-size: cover;
+		height:8*@f;
+		padding:0.6*@f 0;
+	}
+	.p-5{
+		background: url(http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/6f2e3383a52e4d4d9a603e19db15bcc0.png) no-repeat center center;
+    	background-size: cover;
+		height:8*@f;
+		padding:0.6*@f 0;
+		text-align: center;
+	}
+	.btn-more{
+          border:1px solid #FFF;
+          padding:0.1*@f 0.3*@f;
+          border-radius:8px;
+          font-size:0.28*@f;
+          color:#FFF;
+          display: inline-block;
+          margin-top:0.5*@f;
+    }
+}
+.report-layer{
+	position: fixed;
+	z-index: 999999999;
+	top:-200%;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow-y: auto;
+	background: #FFF;
+	.re-con{
+		height:100%;
+		position: relative;
+		.close{
+			position: absolute;
+			z-index:9999;
+			top:0;
+			right:0.2*@f;
+			color:#ddd;
+		}
+		.close:after{
+			content : "\2715";
+			font-size:30px;
+		}
+	}
+	img{
+		width:100%;
+	}
+	.swiper-button-white{
+		position: absolute;
+		top:50%;
+		width:36px;
+		height:36px;
+		margin-top:-60px;
+		z-index:999;
+		text-align: center;
+		border-radius:50%;
+	}
+	.swiper-button-next{
+		left:10px;
+		background:rgba(0, 0, 0, 0.2) url(../images/prev-icon.png)  no-repeat center center;
+		background-size: cover;
+	}
+	.swiper-button-prev{
+		right:10px;
+		background:rgba(0, 0, 0, 0.2) url(../images/next-icon.png)  no-repeat center center;
+		background-size: cover;
+	}
+}

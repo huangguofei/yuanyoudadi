@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>茶事-源优大地</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="源优大地,走遍大地,优选好茶" />
+    <meta name="keywords" content="源优大地" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+     @@include('../include/header.tpl')
+</head>
+<body>
+   @@include('../include/goods.tpl')
+  <div class="story-detail-page comm-page">
+     @@include('../include/nar.tpl')
+    
+     <div class="content-d scroll2">
+           <p class="header">源优大地的服务是什么？</p>
+            <p class="reamk">1、商品优选，前往国家地理标志保护区严格筛选原材料基地及加工企业;</p>
+            <p class="img-wrap">
+              <img src="../../images/story-new-con-1.png">
+            </p>
+            <p class="reamk">2、对每一款商品强制要求送往全球领先的瑞士SGS检测中心检测，确保合格方可销售；</p>
+            <p class="img-wrap">
+              <img src="../../images/sgs.png">
+            </p>
+             <p class="reamk">3、对每一款商品强制要求送往全球领先的瑞士SGS检测中心检测，确保合格方可销售；</p>
+            <p class="img-wrap">
+              <img src="../../images/sgs.png">
+            </p>
+            <p class="reamk">4、在全国各地建立体验店及体验点，方便顾客就近体验购买</p>
+            <img src="../../images/shop.png" class="shop-img">
+            <div class="back-reamk">
+                <p class="shop-name">东莞南峰中心旗舰店</p>
+                 <p class="reamk">5、建立基于互联网的销售平台及沟通渠道，方便顾客随时随地购买及原产地企业进行沟通互动；</p>
+                 <p class="img-wrap">
+                    <img src="http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/3f7c2facbdbc4d5d97e2107dceb9b29f.png">
+                </p>
+                 <p class="reamk">6、商品定制，对于不确定销售量而无法投入生产加工的商品，可让顾客吃预约定制，也可根据顾客的特殊要求让原产地企业定制生产</p>
+                 <p class="img-wrap">
+                    <img src="http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/3f7c2facbdbc4d5d97e2107dceb9b29f.png">
+                </p>
+                <p class="reamk">7、仓储及物流配送服务，让分散在各个原产地的企业共享仓库，降低库存成本及物流成本。</p>
+                 <p class="img-wrap">
+                    <img src="http://yydd.oss-cn-shenzhen.aliyuncs.com/yydd-product/3f7c2facbdbc4d5d97e2107dceb9b29f.png">
+                </p>
+                <div class="bottom">
+                    <div class="left">
+                      <p class="title">官方热线</p>
+                      <p class="tel">400-808-2836</p>
+                    </div>
+                    <div class="right">
+                        <a href="http://yuanyoudadi.jd.com/" class="jd"><img src="../../images/jd.png"></a>
+                        <a href="http://shop.yuanyoudadi.com/" class="youzan"><img src="../../images/youzan.png"></a>
+                    </div>
+                </div>  
+            </div>
+
+     </div>
+      <img src="../../images/backtotop.jpg" class="returnUp" id="returnUp" style="display:none;">
+    </div>
+    <script type="text/javascript" src="../../js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/plugin/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+          var $top = $("#returnUp");
+          $(".content-d").scroll(function() {
+              var top = $(this).scrollTop();
+              if(top > 200) {
+                 $top.show();
+              } else {
+                $top.hide();
+              }
+          });
+          $top.click(function(){
+              $(".content-d").animate({scrollTop: 0},300)
+          });
+
+          common.overscroll(document.querySelector('.scroll2'));
+        });
+    </script>
+</body>
+</html>

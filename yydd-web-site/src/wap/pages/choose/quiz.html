@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>选茶-源优大地</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="源优大地,走遍大地,优先好茶" />
+    <meta name="keywords" content="源优大地" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="../../js/plugin/idangerous.swiper.css">
+     @@include('../include/header.tpl')
+</head>
+<body>
+  <div class="quiz-page comm-page" id="quizPage">
+    @@include('../include/nar.tpl')
+    @@include('../include/goods.tpl')
+     <div class="subject-wrap page-item" id="subjectWrap" style="display:none;">
+              <div class="cons-item cons-1 sub-active">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">1/9</p>
+                        </div>
+                    </div>
+                    
+              </div>
+              <div class="cons-item cons-issue" key="1" val="平和体质">
+                    <div class="issue ">
+                                      <p class="issue-name">1.您精力充沛吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您容易疲乏吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="5"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="4"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="2"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="1"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您说话声音低弱无力吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="5"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="4"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="2"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="1"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您感到闷闷不乐、情绪低沉吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="5"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="4"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="2"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="1"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您比一般人耐受不了寒冷吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="5"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="4"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="2"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="1"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您能适应外界自然和社会环境的变化吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">7.您容易失眠吗?</p>
+                                      <p class="answer">
+                                           <span class="a1 a-item" key="5"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="4"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="2"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="1"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">8.您容易忘事（健忘）吗</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="5"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="4"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="2"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="1"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                    
+              </div> 
+              <div class="cons-item cons-2 ">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">2/9</p>
+                        </div>
+                    </div>
+                    
+              </div> 
+
+              <div class="cons-item   cons-issue"  key="2" val="气虚体质">
+                  <div class="issue">
+                                      <p class="issue-name">1.您容易疲乏吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您容易气短(呼吸短促，接不上气)吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您容易心慌吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您容易头晕或站起时晕眩吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您比别人容易患感冒吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您喜欢安静、懒得说话吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">7.您说话声音低弱无力吗?</p>
+                                      <p class="answer">
+                                           <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">8.您活动量稍大就容易出虚汗吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+              </div> 
+               <div class="cons-item cons-3 ">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">3/9</p>
+                        </div>
+                    </div>
+                    
+              </div> 
+              <div class="cons-item cons-issue"   key="3" val="阳虚体质">
+                  <div class="issue">
+                                      <p class="issue-name">1.您手脚发凉吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您胃脘部、背部或腰膝部怕冷吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您感到怕冷、衣服比别人穿得多吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您比一般人耐受不了寒冷吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您比别人容易患感冒吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您喜欢安静、懒得说话吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">7.您吃凉的东西会感到不舒服吗?</p>
+                                      <p class="answer">
+                                           <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">8.您受凉或吃凉的东西后，容易腹泻吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+              </div>
+               <div class="cons-item cons-4">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">4/9</p>
+                        </div>
+                    </div>
+                    
+              </div> 
+              <div class="cons-item cons-issue"   key="4" val="阴虚体质">
+                               <div class="issue">
+                                      <p class="issue-name">1.您感到手脚心发热吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您感觉身体、脸上发热吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您皮肤或口唇干吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您口唇的颜色比一般人红吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您容易便秘或大便干燥吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您面部两颧潮红或偏红吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">7.您感到眼睛干涩吗?</p>
+                                      <p class="answer">
+                                           <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">8.您感到口干咽燥、总想喝水吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+              </div>
+              <div class="cons-item cons-5">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">5/9</p>
+                        </div>
+                    </div>
+                    
+              </div> 
+               <div class="cons-item cons-issue"  key="5" val="痰湿体质">
+                              <div class="issue">
+                                      <p class="issue-name">1.您感到胸闷或腹部胀满吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您感到身体沉重不轻松或不爽快吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您腹部肥满松软吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您有额部油脂分泌多的现象吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您上眼睑比别人肿吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您嘴里有黏黏的感觉吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">7.您平时痰多，特别是咽喉部总感到有痰堵着吗?</p>
+                                      <p class="answer">
+                                           <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">8.您舌苔厚腻或有舌苔厚厚的感觉吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+              </div>
+               <div class="cons-item cons-6">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">6/9</p>
+                        </div>
+                    </div>
+                    
+              </div> 
+              <div class="cons-item cons-issue"  key="6" val="湿热体质">
+                  <div class="issue">
+                                      <p class="issue-name">1.您面部或鼻部有油腻感或者油亮发光吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您易生痤疮或疮疖吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您感到口苦或嘴里有异味吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您大便黏滞不爽、有解不尽的感觉吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您小便时尿道有发热感、尿色浓吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您白带颜色发黄吗?(限女性回答)</p>
+                                      <p class="issue-name" style="margin-top:5px;">7.您的阴囊部位潮湿吗?(限男性回答)</p>
+                                      <p class="answer" style="margin-top:8px;">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+              </div>
+              <div class="cons-item cons-7">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">7/9</p>
+                        </div>
+                    </div>
+                    
+              </div> 
+              <div class="cons-item cons-issue"  key="7" val="血瘀体质">
+                  <div class="issue">
+                                      <p class="issue-name">1.您的皮肤在不知不觉中会出现青紫瘀斑吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您两颧部有细微红丝吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您身体上有哪里疼痛吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您面色晦黯、或容易出现褐斑吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您容易有黑眼圈吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您容易忘事（健忘）吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">7.您口唇颜色偏黯吗?</p>
+                                      <p class="answer">
+                                           <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+              </div>
+               <div class="cons-item cons-8">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">8/9</p>
+                        </div>
+                    </div>
+                    
+              </div>
+              <div class="cons-item cons-issue"   key="8" val="气郁体质">
+                  <div class="issue">
+                                      <p class="issue-name">1.您感到闷闷不乐、情绪低沉吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您容易精神紧张、焦虑不安吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您多愁善感、感情脆弱吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您容易感到害怕或受到惊吓吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您胁肋部或乳房胀痛吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您无缘无故叹气吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">7.您咽喉部有异物感，且吐之不出、咽之不下吗?</p>
+                                      <p class="answer">
+                                           <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+              </div>
+               <div class="cons-item cons-9 ">
+                    <div class="slide-left">
+                      <p class="con-text choose-conr-icon" style="">
+                      </p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="cons-step">
+                            <p class="message">*为了更准确的测出您的体质，请耐心完成9组题目</p>
+                            <p class="step-num">9/9</p>
+                        </div>
+                    </div>
+                    
+              </div> 
+               <div class="cons-item cons-issue" key="9" val="特禀体质">
+                    <div class="issue">
+                                      <p class="issue-name">1.您没有感冒时也会打喷嚏吗?</p>
+                                      <p class="answer enabled">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">2.您没有感冒时也会鼻塞、流鼻涕吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">3.您有因季节变化、温度变化或异味等原因而咳喘的现象吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">4.您容易过敏吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">5.您的皮肤容易起荨麻疹吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">6.您的皮肤因过敏出现过紫癜吗?</p>
+                                      <p class="answer">
+                                          <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+                                  <div class="issue">
+                                      <p class="issue-name">7.您的皮肤一抓就红，并出现抓痕吗?</p>
+                                      <p class="answer">
+                                           <span class="a1 a-item" key="1"><span class="ordio"></span>没有</span>
+                                            <span class="a2 a-item" key="2"><span class="ordio"></span>很少</span>
+                                            <span class="a3 a-item" key="3"><span class="ordio"></span>有时</span>
+                                            <span class="a4 a-item" key="4"><span class="ordio"></span>经常</span>
+                                            <span class="a4 a-item" key="5"><span class="ordio"></span>总是</span>
+                                      </p>
+                                  </div>
+               </div>
+                <div class="bottom">
+                      <a href="/wap/view/choose/">不测了</a>
+                      <a href="javascript:void(0);" class="prev" style="display:none;">上一步</a>
+                      <a href="javascript:void(0);" class="next message">下一步<span class="info">请勾选答案！</span></a>
+                      <a href="javascript:void(0);" class="confim message" style="display:none;">提交<span class="info">请勾选答案！</span></a>
+                  </div>
+              </div>
+     
+    <div class="isSubmit">
+        正在提交您的体质报告...
+    </div>
+  </div>
+	
+    <script type="text/javascript" src="../../js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/plugin/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/main.min.js"></script>
+    <script>
+       $(function() {
+          quizModule.init();
+      })
+    </script>
+</body>
+</html>

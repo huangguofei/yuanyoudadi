@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>客户信息-源优大地</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="源优大地,走遍大地,优先好茶" />
+    <meta name="keywords" content="源优大地" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+    <script type="text/javascript" src="../../js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/plugin/paging.js"></script>
+    <script type="text/javascript" src="../../js/main.min.js"></script>
+    @@include('../include/header.tpl')
+</head>
+<body>
+     <div class="user-page">
+           <div class="pad-head">
+                <a href="/web/view/pad/" class="returnPage"></a>
+                <span>客户信息</span>
+                <a href="/web/view/user/edit.html" class="add-user">添加</a>
+            </div> 
+            <div class="user-list">
+                <div class="panel">
+                        <table id="userList">
+                            <thead>
+                                <tr>
+                                    <td width="50px">#</td>
+                                    <td>姓名</td>
+                                    <td>性别</td>
+                                    <td>生日</td>
+                                    <td>电话</td>
+                                    <td>微信</td>
+                                    <td>到店渠道</td>
+                                    <td>地址</td>
+                                    <td>饮用习惯</td>
+                                    <td>饮用频率</td>
+                                    <td>购买用途</td>
+                                    <td>口味偏好</td>
+                                    <td>所属行业</td>
+                                    <td>操作</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+
+                </div>
+                
+                
+            </div>
+            <div id="page" class="page_div"></div>
+     </div> 
+     <script type="text/javascript">
+            userModule.init();
+     </script>  
+</body>
+</html>

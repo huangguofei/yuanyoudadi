@@ -1,0 +1,65 @@
+ @import "../../../lib/less/config.less";
+.share-page{
+	height: 100%;
+	background: url(../images/m-back1.jpg) no-repeat center  center;
+    background-size:cover;
+    overflow: hidden;
+    .share-wrap{
+    	height:100%;
+    	overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    	position: relative;
+    	 .slide-left{
+              height:52%;
+              padding-top:1.5*@f;
+              position: relative;
+              .con-text{
+              	position: relative;
+              	left:50%;
+              	height:47px;width:169px;
+              	margin-left:-84.5px;
+              	background: url(../images/share-icon.png) no-repeat;
+              	background-size:cover;
+              }
+              .cons-name{
+              		text-align: center;
+              		margin-top:0.1*@f;
+              		.name{
+              			border-bottom:1px solid @acolor;
+              			color:@acolor;
+              			font-size:0.52*@f;
+              			padding:0.06*@f 0;
+              		}
+              		
+              }
+              .reamk{
+                margin-top:0.5*@f;
+                padding:0 0.5*@f;
+                text-align: center;
+                color:#FFF;
+                .tit{
+                  padding-bottom:0.2*@f;
+                }
+              }
+          }
+          .slide-right{
+              height:48%;
+              position: relative;
+              margin-top:-@f;
+              .echart-wrap{
+              	height:4*@f;
+              }
+          }
+    }
+    .bottom{
+    	position: fixed;
+    	bottom:0.6*@f;
+    	width:100%;
+    	text-align: center;
+    	a{
+    		color:@acolor;
+    		padding-bottom:0.1*@f;
+    		border-bottom:1px solid @acolor;
+    	}
+    }
+}

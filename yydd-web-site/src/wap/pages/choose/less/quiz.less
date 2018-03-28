@@ -1,0 +1,217 @@
+/*.资源 10{height:92px;width:244px;background-position:0 -303px;}
+.资源 9{height:129px;width:244px;background-position:0 -395px;}
+.资源 6{height:129px;width:244px;background-position:0 -524px;}
+.资源 2{height:129px;width:244px;background-position:0 -653px;}
+.资源 8{height:147px;width:244px;background-position:0 -782px;}
+.资源 5{height:129px;width:244px;background-position:0 -930px;}
+.资源 4{height:147px;width:244px;background-position:0 -1059px;}
+.资源 7{height:129px;width:244px;background-position:0 -1206px;}
+.资源 3{height:147px;width:244px;background-position:0 -1335px;}*/
+ @import "../../../lib/less/config.less";
+.quiz-page{
+	position: absolute;
+	 width:100%;
+     height:100%;
+     overflow: hidden;
+     background: url(../images/m-back1.jpg) no-repeat center  center;
+       background-size:cover;
+	  .choose-conr-icon{
+	    background:url(../images/choose-conr-icon.png)  no-repeat;
+	     background-size:244px 1483px
+	  }
+	.page-item{
+        width:100%;
+        height:100%;
+        .cons-item{
+	        display: none;
+	        height:75%;
+	        position: relative;
+	        margin-top:20%;
+	        overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+	      }
+	      .slide-left{
+              height:35%;
+              padding-top:0.6*@f;
+              position: relative;
+              .con-text{
+              	position: absolute;
+              	left:50%;
+              	top:50%;
+              }
+          }
+          .slide-right{
+              height:65%;
+          }
+	      .sub-active{
+	        display: block;
+	      }
+
+          .cons-1{
+                .con-text{
+                     height:92px;width:244px;background-position:0 -303px;
+                     margin-top:-46px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-2{
+                .con-text{
+                     height:147px;width:244px;background-position:0 -1059px;
+                     margin-top:-73.5px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-3{
+                .con-text{
+                     height:129px;width:244px;background-position:0 -653px;
+                     margin-top:-64.5px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-4{
+                .con-text{
+                     height:147px;width:244px;background-position:0 -1335px;
+                     margin-top:-73.5px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-5{
+                .con-text{
+                     height:147px;width:244px;background-position:0 -782px;
+                     margin-top:-73.5px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-6{
+                .con-text{
+                     height:129px;width:244px;background-position:0 -1206px;
+                     margin-top:-64.5px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-7{
+                .con-text{
+                    height:129px;width:244px;background-position:0 -524px;
+                     margin-top:-64.5px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-8{
+                .con-text{
+                    height:129px;width:244px;background-position:0 -395px;
+                     margin-top:-64.5px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-9{
+                .con-text{
+                    height:129px;width:244px;background-position:0 -930px;
+                     margin-top:-64.5px;
+                     margin-left: -122px;
+                }
+          }
+          .cons-issue{
+              font-size:0.28*@f;
+              .issue{
+                 color:#FFF;
+                 padding:0 0.6*@f;
+                 .answer{
+                    color:@acolor;
+                    margin:0.1*@f 0;
+                    .a-item{
+                      margin-right:0.2*@f;
+                    }
+                    .ordio{
+                      position: relative;
+                      top:0.02*@f;
+                      display: inline-block;
+                      width:0.2*@f;
+                      height:0.2*@f;
+                      border:1px solid @acolor;
+                      border-radius:50%;
+                      margin-right:0.05*@f;
+                    }
+                 }
+                 .active{
+                    .ordio{
+                      background: @acolor;
+                    }
+                 }
+              }
+              .row-select{
+                  background-image:linear-gradient(to top, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
+              }
+          }
+          .cons-step{
+              width:6*@f;
+              margin:auto;
+              border-top:1px solid #CCC;
+              color:#FFF;
+              .message{
+                padding:0.5*@f 0;
+                font-size:0.24*@f;
+                text-align: center;
+              }
+              .step-num{
+                  width:2*@f;
+                  height:2*@f;
+                  border-radius:50%;
+                  border:1px solid #FFF;
+                  margin:auto;
+                  text-align: center;
+                  line-height: 2*@f;
+                  font-size:0.88*@f;
+              }
+          }
+          .bottom{
+              position: absolute;
+              width:100%;
+              bottom:0.6*@f;
+              text-align: center;
+              a{
+                  color:@acolor;
+                  border-bottom:1px solid @acolor;
+                  padding-bottom: 0.06*@f;
+                  margin:0.3*@f;
+                  font-weight: bold;
+              }
+              a:active{
+                color:#FFF;
+                border-bottom:0;
+              }
+              
+          }
+     }
+
+ .isSubmit{
+      display: none;
+      position: absolute;
+      z-index:10009;
+      width:200px;
+      background: #000;
+      color:#FFF;
+      top:50%;
+      left:50%;
+      margin-left:-100px;
+      margin-top:-10px;
+      padding:12px 0;
+      text-align: center;
+      border-radius:10px;
+   }
+   @media all and (orientation: landscape){
+      .page-item{
+          .cons-item{
+            margin-top:10%;
+            height:60%;
+          }
+          .cons-step{
+            border-top:0;
+            margin-top:-0.9*@f;
+          }
+          .bottom{
+            bottom:0.45*@f;
+          }
+      }
+
+   }
+}
